@@ -2,6 +2,7 @@ plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     id("org.jetbrains.kotlin.jvm") version "1.6.21"
     id("org.danilopianini.git-sensitive-semantic-versioning-gradle-plugin") version "0.3.20"
+    id("org.jetbrains.dokka") version "1.7.20"
     // Apply the application plugin to add support for building a CLI application in Java.
     application
 }
@@ -26,4 +27,14 @@ dependencies {
 
 application {
     mainClass.set("devops.AppKt")
+}
+
+val javadocJar = tasks.register<Jar>("javadocJar") {
+    from(tasks.dokkaJavadoc.get().outputDirectory)
+    archiveClassifier.set("javadoc")
+}
+
+val sourceJar = tasks.register<Jar>("sourceJar") {
+    from(sourceSets.named("main").get().allSource)
+    archiveClassifier.set("sources")
 }
