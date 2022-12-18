@@ -22,3 +22,18 @@ jobs:
           distribution: adopt
       - name: Compile and run the program
         run: ./gradlew run
+  release:
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: adopt
