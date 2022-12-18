@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.jvm") version "1.6.21"
     id("org.danilopianini.git-sensitive-semantic-versioning-gradle-plugin") version "0.3.20"
     id("org.jetbrains.dokka") version "1.7.20"
+    id ("org.danilopianini.publish-on-central") version "2.0.11"
     // Apply the application plugin to add support for building a CLI application in Java.
     application
 }
@@ -29,12 +30,27 @@ application {
     mainClass.set("devops.AppKt")
 }
 
-val javadocJar = tasks.register<Jar>("javadocJar") {
-    from(tasks.dokkaJavadoc.get().outputDirectory)
-    archiveClassifier.set("javadoc")
+publishOnCentral {
+    projectUrl.set("https://github.com/AndreaGiulianelli/devops-practice")
+    scmConnection.set("https://github.com/AndreaGiulianelli/devops-practice")
 }
 
-val sourceJar = tasks.register<Jar>("sourceJar") {
-    from(sourceSets.named("main").get().allSource)
-    archiveClassifier.set("sources")
+publishing {
+    publications {
+        withType<MavenPublication> {
+            pom {
+                developers {
+                    developer {
+                        name.set("Andrea Giulianelli")
+                        url.set("https://github.com/AndreaGiulianelli")
+                    }
+                }
+            }
+        }
+    }
+}
+signing {
+    val signingKey: String? by project
+    val signingPassword: String? by project
+    useInMemoryPgpKeys(signingKey, signingPassword)
 }
