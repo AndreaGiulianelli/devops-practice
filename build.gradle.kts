@@ -6,6 +6,8 @@ plugins {
     application
 }
 
+group = "io.github.andreagiulianelli"
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
