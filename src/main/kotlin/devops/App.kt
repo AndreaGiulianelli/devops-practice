@@ -2,5 +2,6 @@ package devops
 
 fun main(args: Array<String>) {
     val name = "Andrea"
-    println("Hello World from ${name}!")
+    val surname = "Giulianelli"
+    println("Hello World from ${name.lowercase()}.${surname.lowercase()}!")
 }
