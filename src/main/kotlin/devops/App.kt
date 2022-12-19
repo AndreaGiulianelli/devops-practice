@@ -1,7 +1,8 @@
 package devops
 
+data class Person(val name: String, val surname: String)
+
 fun main(args: Array<String>) {
-    val name = "Andrea"
-    val surname = "Giulianelli"
-    println("Hello World from ${name}${surname}!")
+    val p = Person("Andrea", "Giulianelli")
+    println("Hello World from ${p.name}${p.surname}!")
 }
