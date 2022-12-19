@@ -1,3 +1,16 @@
+## [1.1.1](https://github.com/AndreaGiulianelli/devops-practice/compare/1.1.0...1.1.1) (2022-12-19)
+
+
+### Bug Fixes
+
+* fix username in greetings ([7237e10](https://github.com/AndreaGiulianelli/devops-practice/commit/7237e10074f3ca623410b3f99f361fc2633dc87c))
+
+
+### General maintenance
+
+* avoid ci during semantic release commits ([9b2ed9c](https://github.com/AndreaGiulianelli/devops-practice/commit/9b2ed9cfd1cb004080f6e690861e8d24829e1999))
+* merge branch 'main' of github.com:AndreaGiulianelli/devops-practice into main ([f05789f](https://github.com/AndreaGiulianelli/devops-practice/commit/f05789f82c2e0045dff82d583c4e4287f480b612))
+
 ## [1.1.0](https://github.com/AndreaGiulianelli/devops-practice/compare/1.0.0...1.1.0) (2022-12-19)
 
 
