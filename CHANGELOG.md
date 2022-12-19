@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/AndreaGiulianelli/devops-practice/compare/1.1.1...1.2.0) (2022-12-19)
+
+
+### Features
+
+* class Person introduced ([279826c](https://github.com/AndreaGiulianelli/devops-practice/commit/279826cc2948d58134e80d925409c0d98e9b4edd))
+
 ## [1.1.1](https://github.com/AndreaGiulianelli/devops-practice/compare/1.1.0...1.1.1) (2022-12-19)
 
 
