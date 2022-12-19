@@ -28,7 +28,7 @@ config.plugins.push(
     }],
     ["@semantic-release/git", {
         "assets": ["CHANGELOG.md", "package.json"],
-        "message": "chore(release)!: ${nextRelease.version} released"
+        "message": "chore(release)!: [skip ci] ${nextRelease.version} released"
     }],
 )
 
