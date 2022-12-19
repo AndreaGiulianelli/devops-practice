@@ -31,7 +31,8 @@ jobs:
         || github.event.pull_request.head.repo.full_name == github.repository
       )
     concurrency:
-      group: test-release
+      group: test-release-${{ github.event.number || github.ref }}
+      cancel-in-progress: true
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v3
@@ -64,7 +65,9 @@ jobs:
         || github.event.pull_request.head.repo.full_name == github.repository
       )
     concurrency:
-      group: release
+      # One release job at a time per branch - pr are usually on separate branches...
+      # And also semantic release is configured to release on from main branch
+      group: release-${{ github.event.number || github.ref }}
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v3
