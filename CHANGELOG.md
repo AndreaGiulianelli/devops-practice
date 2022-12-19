@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/AndreaGiulianelli/devops-practice/compare/1.0.0...1.1.0) (2022-12-19)
+
+
+### Features
+
+* now we have also surname during greetings ([0b8b0b3](https://github.com/AndreaGiulianelli/devops-practice/commit/0b8b0b3a57c2a8c30b4233a5b07039ef930d9678))
+
+
+### General maintenance
+
+* merge branch 'main' of github.com:AndreaGiulianelli/devops-practice into main ([499909a](https://github.com/AndreaGiulianelli/devops-practice/commit/499909ac7663013f3008ac4bb43b3d2a584802ce))
+
 ## 1.0.0 (2022-12-19)
 
 
