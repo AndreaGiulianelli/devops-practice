@@ -1,0 +1,6 @@
+pull_request_rules:
+  - name: Automatic PR Update
+    conditions:
+      - check-success=success
+    actions:
+      update:
