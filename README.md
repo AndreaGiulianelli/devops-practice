@@ -23,10 +23,9 @@
 22. Checkpoint: ask the teacher to take a look.
 
 ## Summary
-These are the main technologies used:
 - Kotlin base project
 - Gradle
-- Conventional Commits + Git Hook
+- Conventional Commits
 - CI/CD
   - Build + Test with matrix
   - dry-delivery until close repository on Maven Central
