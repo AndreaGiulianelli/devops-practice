@@ -26,7 +26,7 @@
 These are the main technologies used:
 - Kotlin base project
 - Gradle
-- Conventional Commits
+- Conventional Commits + Git Hook
 - CI/CD
   - Build + Test with matrix
   - dry-delivery until close repository on Maven Central
