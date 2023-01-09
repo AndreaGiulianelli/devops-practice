@@ -23,6 +23,7 @@
 22. Checkpoint: ask the teacher to take a look.
 
 ## Summary
+These are the main technologies used:
 - Kotlin base project
 - Gradle
 - Conventional Commits
