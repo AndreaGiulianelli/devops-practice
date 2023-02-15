@@ -33,4 +33,4 @@
     - GitHub Release
     - Maven Central
 - Branch protection
-- Renovate
+- Renovate 
