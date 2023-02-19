@@ -1,6 +1,6 @@
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.7.22"
+    id("org.jetbrains.kotlin.jvm") version "1.8.10"
     id("org.danilopianini.git-sensitive-semantic-versioning-gradle-plugin") version "0.3.25"
     id("org.jetbrains.dokka") version "1.7.20"
     id ("org.danilopianini.publish-on-central") version "3.1.1"
