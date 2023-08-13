@@ -3,7 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.jvm") version "1.9.0"
     id("org.danilopianini.git-sensitive-semantic-versioning-gradle-plugin") version "1.1.10"
     id("org.jetbrains.dokka") version "1.8.20"
-    id ("org.danilopianini.publish-on-central") version "5.0.10"
+    id ("org.danilopianini.publish-on-central") version "5.0.11"
     // Apply the application plugin to add support for building a CLI application in Java.
     application
 }
