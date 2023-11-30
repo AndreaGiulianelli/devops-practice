@@ -16,7 +16,7 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Setup Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: adopt
@@ -40,7 +40,7 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Setup Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: adopt
@@ -76,7 +76,7 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}  # Here we need to insert deployment token if branch protection "allow force push" is enabled only for specific users
       - name: Setup Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: adopt
